@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <style>
+    body{
+      background-color: grey;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+  <div class = 'shoppingCart container-fluid'>
+      <h1>Shopping Cart</h1>
+<!-- Produkt 1: Salmon -->
+      <div class="row item-row align-items-center mb-3">
+        <div class="col-3">
+          <span class="name">Salmon</span>
+        </div>
+        <div class="col-2">
+          <span class="price">60</span>
+        </div>
+        <div class="col-3">
+          <input type="text" class="qty form-control" value="0">
+        </div>
+        <div class="col-2">
+          <span class="subtotal">0</span>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-sm btn-outline-danger delete-btn" type="button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Produkt 2: Tuna -->
+      <div class="row item-row align-items-center mb-3">
+        <div class="col-3">
+          <span class="name">Tuna</span>
+        </div>
+        <div class="col-2">
+          <span class="price">50</span>
+        </div>
+        <div class="col-3">
+          <input type="text" class="qty form-control" value="0">
+        </div>
+        <div class="col-2">
+          <span class="subtotal">0</span>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-sm btn-outline-danger delete-btn" type="button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Produkt 3: Carp -->
+      <div class="row item-row align-items-center mb-3">
+        <div class="col-3">
+          <span class="name">Carp</span>
+        </div>
+        <div class="col-2">
+          <span class="price">40</span>
+        </div>
+        <div class="col-3">
+          <input type="text" class="qty form-control" value="0">
+        </div>
+        <div class="col-2">
+          <span class="subtotal">0</span>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-sm btn-outline-danger delete-btn" type="button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Produkt 4: Pork -->
+      <div class="row item-row align-items-center mb-3">
+        <div class="col-3">
+          <span class="name">Pork</span>
+        </div>
+        <div class="col-2">
+          <span class="price">50</span>
+        </div>
+        <div class="col-3">
+          <input type="text" class="qty form-control" value="0">
+        </div>
+        <div class="col-2">
+          <span class="subtotal">0</span>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-sm btn-outline-danger delete-btn" type="button">Delete</button>
+        </div>
+      </div>
+
+      <!-- Produkt 5: Beef -->
+      <div class="row item-row align-items-center mb-3">
+        <div class="col-3">
+          <span class="name">Beef</span>
+        </div>
+        <div class="col-2">
+          <span class="price">40</span>
+        </div>
+        <div class="col-3">
+          <input type="text" class="qty form-control" value="0">
+        </div>
+        <div class="col-2">
+          <span class="subtotal">0</span>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-sm btn-outline-danger delete-btn" type="button">Delete</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bereich für: Neues Produkt hinzufügen -->
+    <div class="row-new-item row p-3 mb-4 align-items-center">
+      <div class="col-4">
+        <input type="text" class="new-item-name form-control" placeholder="Item Name">
+      </div>
+      <div class="col-3">
+        <input type="text" class="new-item-price form-control" placeholder="Price">
+      </div>
+      <div class="col-5">
+        <button class="create-btn btn btn-success btn-sm" type="button">Create New Item</button>
+      </div>
+    </div>
+    
+  <button class="calcPricesBtn btn btn-sm m-3">Calculate Prices</button>
+  <h2>Total Price:</h2>
+  </div>
+  
+  </body>
+</html>
